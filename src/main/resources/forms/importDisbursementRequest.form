@@ -1,0 +1,65 @@
+{
+  "components": [
+    {
+      "label": "Tên file chi lương",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_09wxhth",
+        "columns": null
+      },
+      "id": "Field_1qggdoa",
+      "key": "disbursementFileName",
+      "appearance": {}
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Ngày chi lương",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1srtk01",
+        "columns": null
+      },
+      "id": "Field_17suw8i",
+      "key": "disbursementDate"
+    },
+    {
+      "values": [
+        {
+          "label": "John",
+          "value": "john"
+        },
+        {
+          "label": "Nguyễn Văn A",
+          "value": "nguyenVanA"
+        },
+        {
+          "label": "Dev Quèn Viettel",
+          "value": "devViettel"
+        },
+        {
+          "label": "Alibaba",
+          "value": "alibaba"
+        }
+      ],
+      "label": "Danh sách nhân viên",
+      "type": "checklist",
+      "layout": {
+        "row": "Row_15l55fq",
+        "columns": null
+      },
+      "id": "Field_0g970ig",
+      "key": "transactionDetails",
+      "description": "Lựa chọn nhân viên để chi lương"
+    }
+  ],
+  "type": "default",
+  "id": "Form_13yif1p",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.13.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 9
+}
