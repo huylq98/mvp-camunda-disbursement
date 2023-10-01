@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
 
 import javax.inject.Named;
 
-@Named
-public class ReArrangeDisbursement implements JavaDelegate {
+@Named("logger")
+public class ConsoleLoggerDelegate implements JavaDelegate {
 
-    private static final Logger log = LoggerFactory.getLogger(ReArrangeDisbursement.class);
+    private static final Logger log = LoggerFactory.getLogger(ConsoleLoggerDelegate.class);
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        log.info("Performing aggressively heavy task to arrange disbursement flow...");
+        log.info("Disbursement Process: {}", delegateExecution.getCurrentActivityName());
     }
 }

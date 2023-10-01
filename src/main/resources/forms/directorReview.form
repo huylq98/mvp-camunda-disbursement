@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "text": "Yêu cầu chi lương",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1vb2m8q",
+        "columns": null
+      },
+      "id": "Field_1bzraj0"
+    },
+    {
+      "label": "Tổng tiền",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xcd4kz",
+        "columns": null
+      },
+      "id": "Field_0l4vj13",
+      "key": "totalAmount",
+      "readonly": true
+    },
+    {
+      "values": [
+        {
+          "label": "Approve",
+          "value": "true"
+        },
+        {
+          "label": "Reject",
+          "value": "false"
+        }
+      ],
+      "label": "Lựa chọn thao tác",
+      "type": "select",
+      "layout": {
+        "row": "Row_1h6f00k",
+        "columns": null
+      },
+      "id": "Field_1nu7c6c",
+      "key": "isDirectorApproved",
+      "defaultValue": "true"
+    }
+  ],
+  "type": "default",
+  "id": "director-review-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.1"
+  },
+  "schemaVersion": 10
+}

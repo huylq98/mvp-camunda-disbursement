@@ -8,58 +8,55 @@
         "columns": null
       },
       "id": "Field_1qggdoa",
-      "key": "disbursementFileName",
+      "key": "fileName",
       "appearance": {}
     },
     {
-      "subtype": "date",
-      "dateLabel": "Ngày chi lương",
-      "label": "Date time",
-      "type": "datetime",
+      "label": "Tiền lương mỗi nhân viên",
+      "type": "textfield",
       "layout": {
-        "row": "Row_1srtk01",
+        "row": "Row_1suosl9",
         "columns": null
       },
-      "id": "Field_17suw8i",
-      "key": "disbursementDate"
+      "id": "Field_1b1qpk8",
+      "key": "salary",
+      "validate": {
+        "pattern": "^(?:0|[1-9][0-9]*)$"
+      },
+      "appearance": {
+        "suffixAdorner": "đ"
+      }
     },
     {
-      "values": [
-        {
-          "label": "John",
-          "value": "john"
-        },
-        {
-          "label": "Nguyễn Văn A",
-          "value": "nguyenVanA"
-        },
-        {
-          "label": "Dev Quèn Viettel",
-          "value": "devViettel"
-        },
-        {
-          "label": "Alibaba",
-          "value": "alibaba"
-        }
-      ],
-      "label": "Danh sách nhân viên",
-      "type": "checklist",
+      "label": "Số lượng nhân viên",
+      "type": "number",
       "layout": {
-        "row": "Row_15l55fq",
+        "row": "Row_1mn57ue",
         "columns": null
       },
-      "id": "Field_0g970ig",
-      "key": "transactionDetails",
-      "description": "Lựa chọn nhân viên để chi lương"
+      "id": "Field_103duv8",
+      "key": "employees",
+      "defaultValue": 0,
+      "increment": "1"
+    },
+    {
+      "label": "Ngày chi lương",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1h5lwtq",
+        "columns": null
+      },
+      "id": "Field_0vlmt6w",
+      "key": "disbursementDate"
     }
   ],
   "type": "default",
-  "id": "Form_13yif1p",
+  "id": "import-disbursement-request-form",
   "exporter": {
     "name": "Camunda Modeler",
-    "version": "5.13.0"
+    "version": "5.15.1"
   },
   "executionPlatform": "Camunda Platform",
   "executionPlatformVersion": "7.19.0",
-  "schemaVersion": 9
+  "schemaVersion": 10
 }

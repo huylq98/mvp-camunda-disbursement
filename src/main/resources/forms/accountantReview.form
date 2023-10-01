@@ -1,0 +1,90 @@
+{
+  "components": [
+    {
+      "text": "Yêu cầu chi lương",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1lza153",
+        "columns": null
+      },
+      "id": "Field_0c0k81b"
+    },
+    {
+      "label": "Tên file chi lương",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1lza153",
+        "columns": null
+      },
+      "id": "Field_0t9f4md",
+      "key": "fileName",
+      "readonly": "true",
+      "disabled": false
+    },
+    {
+      "label": "Tổng tiền lương",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1kumjug",
+        "columns": null
+      },
+      "id": "Field_0spohdg",
+      "key": "totalSalary",
+      "readonly": true
+    },
+    {
+      "label": "Phí phải chịu",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_00f384s",
+        "columns": null
+      },
+      "id": "Field_086fjqy",
+      "key": "totalFee",
+      "readonly": "true",
+      "disabled": false
+    },
+    {
+      "label": "Tổng tiền",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1bbsf1d",
+        "columns": null
+      },
+      "id": "Field_1mz861d",
+      "key": "totalAmount",
+      "readonly": true
+    },
+    {
+      "values": [
+        {
+          "label": "Approve",
+          "value": "true"
+        },
+        {
+          "label": "Reject",
+          "value": "false"
+        }
+      ],
+      "label": "Lựa chọn thao tác",
+      "type": "select",
+      "layout": {
+        "row": "Row_0ychvgj",
+        "columns": null
+      },
+      "id": "Field_1nkozlj",
+      "key": "isApproved",
+      "defaultValue": "true"
+    }
+  ],
+  "type": "default",
+  "id": "accountant-review-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.1"
+  },
+  "schemaVersion": 10
+}
